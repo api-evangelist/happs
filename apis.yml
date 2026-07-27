@@ -1,7 +1,29 @@
 aid: happs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/happs.png
 name: Happs
-description: Happs is a company surfaced as a portfolio company of bullpen-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Happs was a live-streaming platform for creators and citizen journalists that
+  let broadcasters produce real-time news and multicast a single live stream
+  simultaneously to Facebook, YouTube, Twitter/X, Twitch and other destinations,
+  with built-in studio tools and viewer monetization through tips and monthly
+  sponsorships. Originally launched as a home for independent journalists, it
+  expanded into a general creator social network and ran its live video on
+  Amazon Interactive Video Service (Amazon IVS). The company raised roughly
+  $4.7M in a post-seed round led by Bullpen Capital and Crosslink Capital, and
+  wound down operations around 2022. This profile is retained in the API
+  Evangelist network as a portfolio-lead record; no public developer program,
+  API, or live web surface remains.
 url: https://raw.githubusercontent.com/api-evangelist/happs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +31,23 @@ x-backed-by:
 - bullpen-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: inactive
+x-status-note: >-
+  Site offline as of enrichment (happs.co refuses connections on 443; happs.tv
+  and status.happs.tv no longer resolve). Company appears to have wound down
+  around 2022.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Live Streaming
+- Video
+- News
+- Journalism
+- Creator Economy
+- Social Media
+- Multistreaming
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +55,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/happs-domain-security.yml
 - type: Website
-  url: https://happs.co/feed
+  url: https://happs.co
+- type: Blog
+  url: https://medium.com/happsnews
+- type: CompanyProfile
+  url: https://www.crunchbase.com/organization/happs
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
