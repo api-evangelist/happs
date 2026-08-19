@@ -36,7 +36,7 @@ x-status-note: >-
   Site offline as of enrichment (happs.co refuses connections on 443; happs.tv
   and status.happs.tv no longer resolve). Company appears to have wound down
   around 2022.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
